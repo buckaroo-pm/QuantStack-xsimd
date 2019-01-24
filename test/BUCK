@@ -1,0 +1,14 @@
+load('//:buckaroo_macros.bzl', 'buckaroo_deps_from_package')
+
+gtest = \
+  buckaroo_deps_from_package('github.com/buckaroo-pm/google-googletest')
+
+cxx_test(
+  name = 'test',
+  srcs = glob([
+    '*.cpp',
+  ]),
+  deps = gtest + [
+    '//:xsimd',
+  ],
+)

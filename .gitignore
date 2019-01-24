@@ -37,3 +37,10 @@ build/
 docs/CMakeCache.txt
 docs/xml/
 docs/build/
+
+.buckd
+buck-out
+.buckconfig.local
+.buckconfig.d
+buckaroo
+buckaroo_macros.bzl
